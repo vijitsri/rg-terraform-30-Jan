@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "vsrgblock" {
-  name     = "vsrg30jan"
-  location = "east us"
+  name     = each.value.name
+  location = each.value.location
 }
